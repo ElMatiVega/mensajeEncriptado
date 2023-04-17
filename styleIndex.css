@@ -1,0 +1,136 @@
+body{
+    background: #E5E5E5;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    padding: 20px 0;
+}
+
+    
+    
+#imagenAlura{
+    height: 48px;
+    width: 128px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+    margin: 40px 0 0 40px;
+    
+}
+#imagenOracle{
+    height: 48px;
+    width: 120px;
+}
+#imagenMV{
+    height: 48px;
+    width: 48px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+.busqueda{
+    position: absolute;
+    display: inline-block;
+    width: 940px;
+    margin: 400px 0 0 0;
+    padding: 50px;
+}
+.inputBusqueda{
+    border: none;
+    background-color: rgb(229, 229, 229);
+    height: 48px;
+    width: 577px;
+    font-size: 28px;
+    font-weight: 400;
+    color: #0A3871;
+    margin: 5% 0 0 10%;
+}
+.parrafitoBusqueda{
+    
+    font-size: 16px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin: 0 0 16px 10%;
+}
+#botonEncriptar{
+    width: 340px;
+    height: 65px;
+    border-radius: 2em;
+    background-color: #0A3871;
+    color:#E5E5E5;
+    border:1px solid #0A3871;
+    font-size: 18px;
+}
+#botonDesencriptar{
+    width: 340px;
+    height: 65px;
+    border-radius: 2em;
+    margin-left: 24px;
+    background-color: #AAB2D5;
+    color: #0A3871;
+    border:1px solid #0A3871;
+    font-size: 18px;
+}
+
+
+.resultado{
+    display: inline-grid;
+    justify-content: center;
+    width: 400px;
+    height:600px;
+    /* White */
+    background: #FFFFFF;
+    /* shadow */
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    justify-items: center;
+    margin:  0 40px 40px 400px;
+}
+
+.imagenResultado{
+    width: 336px;
+    height: 304px;
+    
+}
+.resultado div{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  gap: 16px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  
+}
+.resultado p{
+    text-align: center;
+}
+.resultado span{
+    text-align: center;
+}
+
+/* .inpuText{
+    
+position: absolute;
+width: 577px;
+height: 48px;
+left: 240px;
+top: 168px;
+border: none;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 150%;
+color: #0A3871;
+} */
+footer{
+    min-height: calc(100vh - 50px);
+    text-align: center;
+    background-color: #0A3871;
+    padding: 4px;
+}

@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Encriptador de texto</title>
-</head>
-<body>
-    <h1>Hola</h1>
-</body>
+    <link rel="stylesheet" href="reset.html" />
+    <link rel="stylesheet" href="styleIndex.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <img id="imagenAlura" src="imagenes/Logo.png" alt="imagen del logo" />
+      <img
+        id="imagenOracle"
+        src="imagenes/Oracle-Logo.png"
+        alt="imagen del logo"
+      />
+    </header>
+
+    <main class="main">
+        
+      <textarea class="inputBusqueda" cols="30" rows="20">ingrese el texto aqui</textarea>
+      <div class="busqueda">
+        <div>
+          <p class="parrafitoBusqueda">
+            <img
+              src="imagenes/exclamation.png"
+              id="imgBusqueda"
+              alt="Exclamation"
+            />
+            Solo letras minúsculas y sin tilde.
+          </p>
+          <button id="botonEncriptar">Encriptar</button>
+          <button id="botonDesencriptar">Desencriptar</button>
+        </div>
+      </div>
+
+        <div class="resultado">
+          <img
+            class="imagenResultado"
+            src="imagenes/Muñeco.png"
+            alt="Imagen de busqueda"
+          />
+            <div>
+                <p>Ningun mensaje fue encontrado</p>
+                <span>Ingresa el texto que desees encriptar o desencriptar</span>
+            </div>
+          
+        </div>
+      
+    </main>
+
+    <footer>
+      <p>
+        Desarrollado con 💙
+        <a
+          href="https://www.linkedin.com/in/mat%C3%ADas-vega-dev/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img id="imagenMV" src="imagenes/LogoMV.png" alt="imagen del logo" />
+        </a>
+      </p>
+    </footer>
+  </body>
+  <script src="logicaEncriptación.js"></script>
 </html>

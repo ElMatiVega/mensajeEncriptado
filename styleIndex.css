@@ -41,15 +41,43 @@ header{
     margin: 400px 0 0 0;
     padding: 50px;
 }
-.inputBusqueda{
+/* .busqueda div{
+    margin: 55px 0 0 0;
+} */
+.contieneInput{
+    margin: 5% 0 0 10%;
+}
+.textareaBusqueda{
     border: none;
     background-color: rgb(229, 229, 229);
-    height: 48px;
-    width: 577px;
+    height: 100px;
+    width: 600px;
     font-size: 28px;
     font-weight: 400;
     color: #0A3871;
     margin: 5% 0 0 10%;
+    outline: none;
+}
+
+.textareaBusqueda::placeholder{
+    color: #0A3871;
+}
+
+.textareaBusqueda::placeholder:disabled{
+    color: #0A3871;
+}
+
+
+
+#botonCopiar{
+    width: 170px;
+    height: 32px;
+    border-radius: 2em;
+    margin-left: 24px;
+    background-color: #AAB2D5;
+    color: #0A3871;
+    border:1px solid #0A3871;
+    font-size: 18px;
 }
 .parrafitoBusqueda{
     
@@ -65,7 +93,18 @@ header{
     color:#E5E5E5;
     border:1px solid #0A3871;
     font-size: 18px;
+    
 }
+#botonEncriptar:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+#botonEncriptar:active{
+   border:3px solid #609ED4;
+   color: #609ED4;
+}
+
 #botonDesencriptar{
     width: 340px;
     height: 65px;
@@ -76,7 +115,15 @@ header{
     border:1px solid #0A3871;
     font-size: 18px;
 }
-
+#botonDesencriptar:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+#botonDesencriptar:active{
+   border:3px solid #609ED4;
+   color: #609ED4;
+}
 
 .resultado{
     display: inline-grid;
@@ -93,43 +140,36 @@ header{
 }
 
 .imagenResultado{
-    width: 336px;
-    height: 304px;
+    width: 300px;
+    height: 280px;
     
 }
 .resultado div{
   text-align: center;
   display: flex;
   flex-direction: column;
-  padding: 0px;
+  padding: 10px;
   gap: 16px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   
 }
-.resultado p{
-    text-align: center;
-}
-.resultado span{
-    text-align: center;
+.pResultado{
+    color: rgba(0, 0, 0, 0.8);
+     text-align: center;
+     font-weight:bold;
+     font-size: 20px;
+     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-/* .inpuText{
-    
-position: absolute;
-width: 577px;
-height: 48px;
-left: 240px;
-top: 168px;
-border: none;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 32px;
-line-height: 150%;
-color: #0A3871;
-} */
+.spanResultado{
+    color:gray;
+    font-size: 18px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+
 footer{
-    min-height: calc(100vh - 50px);
+    min-height: calc(10vh - 50px);
     text-align: center;
     background-color: #0A3871;
     padding: 4px;

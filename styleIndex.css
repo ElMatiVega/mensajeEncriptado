@@ -20,6 +20,21 @@ header{
     margin: 40px 0 0 40px;
     
 }
+
+.vibrar:hover #imagenAlura {
+    -webkit-animation: tiembla 0.5s 1;
+    -moz-animation: tiembla 0.5s 1;
+    -o-animation: tiembla 0.5s 1;
+    -ms-animation: tiembla 0.5s 1;
+  }
+  @-webkit-keyframes tiembla {
+    0%  { -webkit-transform:rotateZ(-5deg); }
+    50% { -webkit-transform:rotateZ( 0deg) scale(1.4); }
+    100%{ -webkit-transform:rotateZ( 5deg);
+  }
+}
+
+
 #imagenOracle{
     height: 48px;
     width: 120px;
@@ -28,6 +43,19 @@ header{
     height: 48px;
     width: 48px;
 }
+.vibrar:hover #imagenMV {
+    -webkit-animation: tiembla 0.5s 1;
+    -moz-animation: tiembla 0.5s 1;
+    -o-animation: tiembla 0.5s 1;
+    -ms-animation: tiembla 0.5s 1;
+  }
+  @-webkit-keyframes tiembla {
+    0%  { -webkit-transform:rotateZ(-5deg); }
+    50% { -webkit-transform:rotateZ( 0deg) scale(1.4); }
+    100%{ -webkit-transform:rotateZ( 5deg);
+  }
+}
+
 .main{
     display: flex;
     flex-direction: row;

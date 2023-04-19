@@ -1,6 +1,13 @@
-document.addEventListener("DOMContentLoaded", encriptacion);
+// document.addEventListener("DOMContentLoaded", encriptacion);
+const contenido = document.querySelector("#resultado");
+let boton = document.getElementById("botonEncriptar");
+// boton.onclick = encriptacion;
+boton.addEventListener('click',encriptacion)
+
+var html='';
 
 function encriptacion() {
+  
   let texto = document.querySelector("textarea");
   let textoAEncriptar = texto.value;
   
@@ -28,13 +35,15 @@ function encriptacion() {
     }
   }
  
-  const contenido = document.querySelector("#resultado");
+  //Mostrar en pantalla
   
-  let html='';
+   
   if (encriptado.length > 0) {
-    html += `<p class="pResultado"> ${encriptado}</p></br><button id="botonCopiar">Copiar</button>`;
+    html='';
+    html += `<textarea class="textResultado" id="pResultado" cols="25" rows="20"> ${encriptado}</textarea></br><button id="botonCopiar">Copiar</button>`;
     
   } else {
+    html='';
     html += (` <img
     class="imagenResultado"
     src="imagenes/Muñeco.png"
@@ -46,10 +55,30 @@ function encriptacion() {
     </div>`);
     
   }
- 
+  texto.value='';
   contenido.innerHTML=html;
- 
+
+
 }
-let boton = document.getElementById("botonEncriptar");
-boton.onclick = encriptacion;
+
+
+let result = document.querySelector("#pResultado");
+let button_Copia = document.querySelector("#botonCopiar");
+button_Copia.addEventListener('click', (event) => {
+
+  event.preventDefault();
+
+  navigator.clipboard.writeText(result.innerHTML)
+      .then(() => {
+          alert("Copiado");
+          console.log("copiado");
+      })
+      .catch(err => {
+          alert('Hubo un error', err);
+          console.log("err");
+      })
+})
+
+
+
 

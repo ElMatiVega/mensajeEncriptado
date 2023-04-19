@@ -40,7 +40,7 @@ function encriptacion() {
    
   if (encriptado.length > 0) {
     html='';
-    html += `<textarea class="textResultado" id="pResultado" cols="25" rows="20"> ${encriptado}</textarea></br><button id="botonCopiar">Copiar</button>`;
+    html += `<textarea class="textResultado" id="textResultado" cols="25" rows="20" style=""> ${encriptado}</textarea></br><button id="botonCopiar" onclick="copiarTextResultado()">Copiar</button>`;
     
   } else {
     html='';
@@ -62,22 +62,12 @@ function encriptacion() {
 }
 
 
-let result = document.querySelector("#pResultado");
-let button_Copia = document.querySelector("#botonCopiar");
-button_Copia.addEventListener('click', (event) => {
-
-  event.preventDefault();
-
-  navigator.clipboard.writeText(result.innerHTML)
-      .then(() => {
-          alert("Copiado");
-          console.log("copiado");
-      })
-      .catch(err => {
-          alert('Hubo un error', err);
-          console.log("err");
-      })
-})
+function copiarTextResultado(){
+  let respuesta= document.getElementById('textResultado');
+  let boton=document.getElementById('botonCopiar');
+  navigator.clipboard.writeText(respuesta.textContent);
+  boton.textContent='Copiado'
+}
 
 
 

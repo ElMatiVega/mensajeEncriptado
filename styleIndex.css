@@ -1,7 +1,9 @@
 body{
+    
     background: #E5E5E5;
     font-family: 'Inter', sans-serif;
     display:grid;
+    
     
 }
 
@@ -57,10 +59,7 @@ header{
 }
 
 .main{
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: flex-start; */
+   
     display: grid;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -229,7 +228,7 @@ header{
 }
 footer{
     
-    width: 100%;
+    width:100%;    
     text-align: center;
     background-color: #0A3871;
     bottom: 0;

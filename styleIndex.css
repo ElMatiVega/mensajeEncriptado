@@ -1,8 +1,8 @@
 body{
     background: #E5E5E5;
     font-family: 'Inter', sans-serif;
-    display: flex;
-    flex-direction: column;
+    display:grid;
+    
 }
 
 header{
@@ -57,10 +57,16 @@ header{
 }
 
 .main{
-    display: flex;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start; */
+    display: grid;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: flex-start;
+    justify-content: space-evenly;
+    justify-items: stretch;
 }
 .busqueda{
     position: absolute;
@@ -83,7 +89,7 @@ header{
     font-size: 28px;
     font-weight: 400;
     color: #0A3871;
-    margin: 5% 0 0 10%;
+    margin: 0 0 0 10%;
     outline: none;
 }
 
@@ -94,6 +100,9 @@ header{
 .textareaBusqueda::placeholder:disabled{
     color: #0A3871;
 }
+.textareaBusqueda::-webkit-scrollbar {
+    display: none;
+  }
 
 
 
@@ -219,8 +228,73 @@ header{
    color: #609ED4;
 }
 footer{
-    min-height: calc(10vh - 5px);
+    
+    width: 100%;
     text-align: center;
     background-color: #0A3871;
+    bottom: 0;
+    position: fixed;
+    min-height: 70px;
+}
+
+@media screen and (max-width:1130px) {
+    .main{
+        display: grid;
+        flex-direction: column;
+    }
+    .resultado{
+        display: flex;
+        flex-direction: row-reverse;
+        height: 200px;
+        width: 600px;
+        margin: 40px 40px 40px 40px;
+    }
+    .imagenResultado{
+        width:10em;
+        height:10em;
+        
+    }
+    #botonCopiar{
+        align-self: flex-end;
+        margin: 0 0 1em 2em;
+    }
+  
+}
+
+@media screen and (max-width:800px) {
+    .busqueda{
+        position: relative;
+        margin: 100px 0 0 0;
+    }
+    .resultado{
+        display: flex;
+    }
+    .imagenResultado{
+        display: none;        
+    }
    
+}
+
+@media screen and (max-width:500px){
+    .busqueda div{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    #botonEncriptar{
+        margin-left: 24px;
+    }
+    .resultado{
+        width:450px;
+        height: 200px;
+    }
+}
+@media screen and (max-width:400px){
+    
+   
+    .resultado{
+        width:350px;
+        height: 200px;
+        margin-left: 70px;
+    }
 }

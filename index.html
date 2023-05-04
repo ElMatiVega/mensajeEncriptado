@@ -15,58 +15,60 @@
     />
   </head>
   <body>
-    <header class="header">
-      <a class="vibrar" href="https://www.aluracursos.com/" target="_blank" rel="noopener noreferrer"><img id="imagenAlura" src="imagenes/Logo.png" alt="imagen del logo" /></a>
-      
-      <img
-        id="imagenOracle"
-        src="imagenes/Oracle-Logo.png"
-        alt="imagen del logo"
-      />
-    </header>
-    <textarea class="textareaBusqueda" id="textarea"   cols="30" rows="30" placeholder="ingrese el texto aquí" ></textarea>
-    <main class="main">
-                
-      <div class="busqueda">
-        <div>
-          <p class="parrafitoBusqueda">
-            <img
-              src="imagenes/exclamation.png"
-              id="imgBusqueda"
-              alt="Exclamation"
-            />
-            Solo letras minúsculas y sin tilde.
-          </p>
-          <button id="botonEncriptar">Encriptar</button>
-          <button id="botonDesencriptar">Desencriptar</button>
-        </div>
-      </div>
-
-      <div class="resultado" id="resultado">
+    <div class="container">
+      <header class="header">
+        <a class="vibrar" href="https://www.aluracursos.com/" target="_blank" rel="noopener noreferrer"><img id="imagenAlura" src="imagenes/Logo.png" alt="imagen del logo" /></a>
+        
         <img
-           class="imagenResultado"
-           src="imagenes/Muñeco.png"
-           alt="Imagen de busqueda"
-         />
-        <div>
-         <span class="spanResultado" >Ingresa el texto que desees encriptar o desencriptar</span>
+          id="imagenOracle"
+          src="imagenes/Oracle-Logo.png"
+          alt="imagen del logo"
+        />
+      </header>
+      <textarea class="textareaBusqueda" id="textarea"   cols="30" rows="30" placeholder="ingrese el texto aquí" ></textarea>
+      <main class="main">
+                  
+        <div class="busqueda">
+          <div>
+            <p class="parrafitoBusqueda">
+              <img
+                src="imagenes/exclamation.png"
+                id="imgBusqueda"
+                alt="Exclamation"
+              />
+              Solo letras minúsculas y sin tilde.
+            </p>
+            <button id="botonEncriptar">Encriptar</button>
+            <button id="botonDesencriptar">Desencriptar</button>
+          </div>
         </div>
-      </div> 
-      
-    </main>
-
-    <footer>
-      <p>
-        Desarrollado con 💙
-        <a 
-          class="vibrar"
-          href="https://www.linkedin.com/in/mat%C3%ADas-vega-dev/"
-          target="_blank"
-          rel="noopener noreferrer"
-          ><img id="imagenMV" src="imagenes/LogoMV.png" alt="imagen del logo" />
-        </a>
-      </p>
-    </footer>
+  
+        <div class="resultado" id="resultado">
+          <img
+             class="imagenResultado"
+             src="imagenes/Muñeco.png"
+             alt="Imagen de busqueda"
+           />
+          <div>
+           <span class="spanResultado" >Ingresa el texto que desees encriptar o desencriptar</span>
+          </div>
+        </div> 
+        
+      </main>
+  
+      <footer>
+        <p>
+          Desarrollado con 💙
+          <a 
+            class="vibrar"
+            href="https://www.linkedin.com/in/mat%C3%ADas-vega-dev/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img id="imagenMV" src="imagenes/LogoMV.png" alt="imagen del logo" />
+          </a>
+        </p>
+      </footer>
+    </div>
   </body>
   <script src="logicaEncriptación.js"></script>
   

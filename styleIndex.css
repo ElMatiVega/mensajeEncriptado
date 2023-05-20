@@ -1,15 +1,10 @@
 
-
 body{
     
     background: #E5E5E5;
     font-family: 'Inter', sans-serif;
     display:grid;
-}
-
-.container{
-    width: 1200px;
-    border: 2px solid black;
+    width: auto;
 }
 
 header{
@@ -79,9 +74,7 @@ header{
     margin: 400px 0 0 0;
     padding: 50px;
 }
-/* .busqueda div{
-    margin: 55px 0 0 0;
-} */
+
 .contieneInput{
     margin: 5% 0 0 10%;
 }
@@ -107,9 +100,6 @@ header{
 .textareaBusqueda::-webkit-scrollbar {
     display: none;
   }
-
-
-
 
 .parrafitoBusqueda{
     
@@ -264,6 +254,7 @@ footer{
 }
 
 @media screen and (max-width:800px) {
+    
     .busqueda{
         position: relative;
         margin: 100px 0 0 0;
